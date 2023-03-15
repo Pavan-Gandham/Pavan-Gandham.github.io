@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="PhotoAlbum.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Album</title>
+  </head>
+  <body>
+    <header>
+       <div class="headerAlbum">
+        <h1> Responsive Album</h1>
+       </div>
+       <div><i class="fa-solid fa-filter" id="filter"></i></div>
+        <div id="filtermenu">
+            <input type="checkbox" id="greyscale" class="option"> greyscale <br>
+            <input type="checkbox" id="Reddish" class="option"> Reddish <br>
+            <input type="checkbox" id="Greenish" class="option"> Greenish <br>
+            <input type="checkbox" id="Bluish"class="option"> Bluish
+        </div>
+    </header>
+    <div class="grid-container" >
+        <div id="c-0" class="grid-item"><img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"  crossorigin="anonymous" alt=""></div>
+        <div id="c-1" class="grid-item"><img src="https://images.unsplash.com/photo-1610296669228-602fa827fc1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c3BhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-2" class="grid-item"><img src="https://images.unsplash.com/photo-1528722828814-77b9b83aafb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-3" class="grid-item"><img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-4" class="grid-item"><img src="https://images.unsplash.com/photo-1501862700950-18382cd41497?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-5" class="grid-item"><img src="https://images.unsplash.com/photo-1457364887197-9150188c107b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-6" class="grid-item"><img src="https://images.unsplash.com/photo-1446941611757-91d2c3bd3d45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-7" class="grid-item"><img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-8" class="grid-item"><img src="https://images.unsplash.com/photo-1581937019650-bb34507b7d64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-9" class="grid-item"><img src="https://images.unsplash.com/photo-1541873676-a18131494184?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-10" class="grid-item"><img src="https://images.unsplash.com/photo-1592093474530-86874167e896?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-11" class="grid-item"><img src="https://images.unsplash.com/photo-1511798616182-aab3698ac53e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-12" class="grid-item"><img src="https://images.unsplash.com/photo-1529788295308-1eace6f67388?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-13" class="grid-item"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzd8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-14" class="grid-item"><img src="https://images.unsplash.com/photo-1543719621-92ebcae62483?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+        <div id="c-15" class="grid-item"><img src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTl8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" crossorigin="anonymous" alt=""></div>
+      </div>
+      <canvas  id="3"id="qrcode"></canvas>
+      <div id="contextMenu" class="context-menu"
+        style="display:none">
+        <ul>
+            <li ><a href="#" class="item" id="it1">Open in Newtab</a></li>
+            <li ><a href="#" class="item" id="it3">Increase brightness</a></li>
+            <li ><a href="#" class="item" id="it4">Reduce resolution</a></li>
+            <li ><a href="#" class="item" id="it5">Create avatar</a></li>
+            <li ><a href="#" class="item" id="it6">Duplicate Image</a></li>
+            <li ><a href="#" class="item" id="it8">Generate QRCode</a></li>
+            <li ><a href="#" class="item" id="it2">Convert to GrayScale</a></li>
+            <li ><a href="#" class="item" id="it9">Convert to Reddish</a></li>
+            <li ><a href="#" class="item" id="it10">Convert to Greenish</a></li>
+            <li ><a href="#" class="item" id="it11">Convert to Bluish</a></li>
+            <li ><a href="#" class="item" id="it12">Check image color</a></li>
+        </ul>
+    </div>
+  </body>
+  <footer>
+    <script src="PhotoAlbum.js"></script>
+    <script src="https://kit.fontawesome.com/2c968d0755.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+  </footer>
+</html>
