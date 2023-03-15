@@ -1,5 +1,7 @@
 *{
     background-color: gray(5);
+padding: auto;
+
 }
 body h2{
     color: rgb(16, 92, 132);
@@ -12,3 +14,14 @@ body h2{
         width: 200px;
     }
     }
+body h3{
+    color: rgb(65, 140, 181);
+    font-size: large;
+    font-weight: bold;
+}
+.col{
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
