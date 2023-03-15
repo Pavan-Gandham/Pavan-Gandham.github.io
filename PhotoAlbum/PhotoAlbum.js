@@ -47,13 +47,7 @@ contextMenu.addEventListener("click",(option)=>
     else if (option.target.id=="it8"){
         console.log(generateQRCode(even))
     }
-    // else if(option.target.id='it1'){
-    //     var newWindow = window.open();
-    //     var img=newWindow.document.createElement('IMG')
-    //     img.src=even.target.src
-    //     newWindow.document.body.appendChild(img);
-    //     newWindow.focus();
-    // }
+
     else if(option.target.id=="it5"){
         even.target.style.borderRadius="50%";
             even.target.style.width='150px';
@@ -79,7 +73,6 @@ contextMenu.addEventListener("click",(option)=>
         even.target.src = canvas.toDataURL();
         let img=document.createElement("img")
         img.src=even.target.src
-        // filter[1].push(img)
     }
 //     else if(option.target.id="it10"){
 //         const canvas = document.createElement('canvas');
@@ -98,7 +91,6 @@ contextMenu.addEventListener("click",(option)=>
 //         even.target.src = canvas.toDataURL();
 //         let img=document.createElement("img")
 //         img.src=even.target.src
-//         // filter[2].push(img)
 // }
 else if(option.target.id="it11"){
     const canvas = document.createElement('canvas');
@@ -117,7 +109,6 @@ else if(option.target.id="it11"){
         even.target.src = canvas.toDataURL();
         let img=document.createElement("img")
         img.src=even.target.src
-        // filter[3].push(img)
 }
 else if(option.target.id=="it12"){
     const canvas = document.createElement('canvas');
