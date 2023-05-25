@@ -45,7 +45,7 @@ contextMenu.addEventListener("click",(option)=>
         container.appendChild(div)
     }
     else if (option.target.id=="it8"){
-        console.log(generateQRCode(even))
+        generateQRCode(even)
     }
 
     else if(option.target.id=="it5"){
@@ -55,25 +55,25 @@ contextMenu.addEventListener("click",(option)=>
             even.target.style.display="flex";
             even.target.style.alignItems='center';
     }
-    else if(option.target.id=="it9"){
-        console.log(even.target)
-        const canvas = document.createElement('canvas');
-        const ctx = canvas.getContext('2d');
+//     else if(option.target.id=="it9"){
+//         console.log(even.target)
+//         const canvas = document.createElement('canvas');
+//         const ctx = canvas.getContext('2d');
 
-        canvas.width = even.target.width;
-        canvas.height = even.target.height;
+//         canvas.width = even.target.width;
+//         canvas.height = even.target.height;
 
-        ctx.drawImage(even.target, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+//         ctx.drawImage(even.target, 0, 0, canvas.width, canvas.height);
+//         const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
-        for (let i = 0; i < imageData.data.length; i += 4) imageData.data[i] = 255;
+//         for (let i = 0; i < imageData.data.length; i += 4) imageData.data[i] = 255;
 
-        ctx.putImageData(imageData, 0, 0);
+//         ctx.putImageData(imageData, 0, 0);
 
-        even.target.src = canvas.toDataURL();
-        let img=document.createElement("img")
-        img.src=even.target.src
-    }
+//         even.target.src = canvas.toDataURL();
+//         let img=document.createElement("img")
+//         img.src=even.target.src
+//     }
 //     else if(option.target.id="it10"){
 //         const canvas = document.createElement('canvas');
 //         const ctx = canvas.getContext('2d');
@@ -92,24 +92,24 @@ contextMenu.addEventListener("click",(option)=>
 //         let img=document.createElement("img")
 //         img.src=even.target.src
 // }
-else if(option.target.id="it11"){
-    const canvas = document.createElement('canvas');
-        const ctx = canvas.getContext('2d');
+// else if(option.target.id="it11"){
+//     const canvas = document.createElement('canvas');
+//         const ctx = canvas.getContext('2d');
 
-        canvas.width = even.target.width;
-        canvas.height = even.target.height;
+//         canvas.width = even.target.width;
+//         canvas.height = even.target.height;
 
-        ctx.drawImage(even.target, 0, 0, canvas.width, canvas.height);
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+//         ctx.drawImage(even.target, 0, 0, canvas.width, canvas.height);
+//         const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
-        for (let i = 0; i < imageData.data.length; i += 4) imageData.data[i+2] = 255;
+//         for (let i = 0; i < imageData.data.length; i += 4) imageData.data[i+2] = 255;
 
-        ctx.putImageData(imageData, 0, 0);
+//         ctx.putImageData(imageData, 0, 0);
 
-        even.target.src = canvas.toDataURL();
-        let img=document.createElement("img")
-        img.src=even.target.src
-}
+//         even.target.src = canvas.toDataURL();
+//         let img=document.createElement("img")
+//         img.src=even.target.src
+// }
 else if(option.target.id=="it12"){
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
@@ -134,13 +134,21 @@ else if(option.target.id=="it12"){
     if(rgb.b>rgb.r && rgb.b>rgb.g){
         color="blue"
     }
-
-    let imageDiv=document.getElementById(even.target.id+"d")
+    console.log(even.target.id)
+    let imageDiv=document.getElementById("c-"+even.target.id)
     let colorpopup=document.createElement("div")
-    colorpopup.textContent=color
     colorpopup.style.zIndex="100"
-    imageDiv.append(colorpopup)
+    colorpopup.style.position="absolute"
+    // add popup  below image
+    colorpopup.style.top="100%"
+    colorpopup.style.left="0"
+    colorpopup.style.width="10%"
+    colorpopup.style.height="10%"
+    colorpopup.style.backgroundColor=color
 
+    colorpopup.textContent=color
+
+    imageDiv.append(colorpopup)
 
 }
 }
