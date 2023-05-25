@@ -55,61 +55,61 @@ contextMenu.addEventListener("click",(option)=>
             even.target.style.display="flex";
             even.target.style.alignItems='center';
     }
-//     else if(option.target.id=="it9"){
-//         console.log(even.target)
-//         const canvas = document.createElement('canvas');
-//         const ctx = canvas.getContext('2d');
+    else if(option.target.id=="it9"){
+        console.log(even.target)
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
 
-//         canvas.width = even.target.width;
-//         canvas.height = even.target.height;
+        canvas.width = even.target.width;
+        canvas.height = even.target.height;
 
-//         ctx.drawImage(even.target, 0, 0, canvas.width, canvas.height);
-//         const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(even.target, 0, 0, canvas.width, canvas.height);
+        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
-//         for (let i = 0; i < imageData.data.length; i += 4) imageData.data[i] = 255;
+        for (let i = 0; i < imageData.data.length; i += 4) imageData.data[i] = 255;
 
-//         ctx.putImageData(imageData, 0, 0);
+        ctx.putImageData(imageData, 0, 0);
 
-//         even.target.src = canvas.toDataURL();
-//         let img=document.createElement("img")
-//         img.src=even.target.src
-//     }
-//     else if(option.target.id="it10"){
-//         const canvas = document.createElement('canvas');
-//         const ctx = canvas.getContext('2d');
+        even.target.src = canvas.toDataURL();
+        let img=document.createElement("img")
+        img.src=even.target.src
+    }
+    else if(option.target.id="it10"){
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
 
-//         canvas.width = even.target.width;
-//         canvas.height = even.target.height;
+        canvas.width = even.target.width;
+        canvas.height = even.target.height;
 
-//         ctx.drawImage(even.target, 0, 0, canvas.width, canvas.height);
-//         const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(even.target, 0, 0, canvas.width, canvas.height);
+        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
-//         for (let i = 4; i < imageData.data.length; i += 4) imageData.data[i+1] = 255;
+        for (let i = 4; i < imageData.data.length; i += 4) imageData.data[i+1] = 255;
 
-//         ctx.putImageData(imageData, 0, 0);
+        ctx.putImageData(imageData, 0, 0);
 
-//         even.target.src = canvas.toDataURL();
-//         let img=document.createElement("img")
-//         img.src=even.target.src
-// }
-// else if(option.target.id="it11"){
-//     const canvas = document.createElement('canvas');
-//         const ctx = canvas.getContext('2d');
+        even.target.src = canvas.toDataURL();
+        let img=document.createElement("img")
+        img.src=even.target.src
+}
+else if(option.target.id="it11"){
+    const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
 
-//         canvas.width = even.target.width;
-//         canvas.height = even.target.height;
+        canvas.width = even.target.width;
+        canvas.height = even.target.height;
 
-//         ctx.drawImage(even.target, 0, 0, canvas.width, canvas.height);
-//         const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(even.target, 0, 0, canvas.width, canvas.height);
+        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
-//         for (let i = 0; i < imageData.data.length; i += 4) imageData.data[i+2] = 255;
+        for (let i = 0; i < imageData.data.length; i += 4) imageData.data[i+2] = 255;
 
-//         ctx.putImageData(imageData, 0, 0);
+        ctx.putImageData(imageData, 0, 0);
 
-//         even.target.src = canvas.toDataURL();
-//         let img=document.createElement("img")
-//         img.src=even.target.src
-// }
+        even.target.src = canvas.toDataURL();
+        let img=document.createElement("img")
+        img.src=even.target.src
+}
 else if(option.target.id=="it12"){
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
